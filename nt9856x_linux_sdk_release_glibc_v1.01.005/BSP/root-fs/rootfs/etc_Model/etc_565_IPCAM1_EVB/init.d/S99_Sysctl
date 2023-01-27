@@ -1,0 +1,10 @@
+[ -f /etc/sysctl.conf ] && sysctl -p >&-
+free
+
+udhcpc;
+ifconfig;
+telnetd;
+cd /var/www/;
+httpd index.html;
+pq_video_rtsp 7;
+

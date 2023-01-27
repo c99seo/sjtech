@@ -1,0 +1,9 @@
+/u-boot
+/linux-kernel
+*.cmd
+*.so.*
+*.so
+*.o
+*.in
+*.a
+Kbuild

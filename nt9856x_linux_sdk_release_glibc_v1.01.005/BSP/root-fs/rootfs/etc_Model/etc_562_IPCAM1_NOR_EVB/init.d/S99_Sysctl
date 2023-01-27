@@ -1,0 +1,2 @@
+[ -f /etc/sysctl.conf ] && sysctl -p >&-
+free

@@ -1,0 +1,2 @@
+[ -f /etc/sysctl.conf ] && sysctl -p >&-
+mount /dev/mmcblk0p1 /mnt/sd/

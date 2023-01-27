@@ -1,0 +1,8 @@
+#!/bin/sh
+
+ifconfig eth0 down;
+sleep 1s
+ifconfig eth0 hw ether 00:55:7B:B5:7D:F0;
+sleep 1s
+ifconfig eth0 up;
+sleep 1s

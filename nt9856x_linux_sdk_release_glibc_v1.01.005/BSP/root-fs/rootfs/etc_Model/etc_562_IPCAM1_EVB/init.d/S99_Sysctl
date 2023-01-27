@@ -1,0 +1,12 @@
+[ -f /etc/sysctl.conf ] && sysctl -p >&-
+free
+echo "w4000 ------------------------------------s99"
+
+udhcpc;
+sleep 1s;
+ifconfig;
+sleep 1s;
+telnetd;
+cd /var/www/;
+httpd index.html;
+#pq_video_rtsp 1;
