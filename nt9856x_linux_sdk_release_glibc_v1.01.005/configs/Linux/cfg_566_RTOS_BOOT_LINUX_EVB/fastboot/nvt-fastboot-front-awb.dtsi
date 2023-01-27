@@ -1,0 +1,16 @@
+/*
+ * Novatek Ltd. NVT9856x ISP part of dts
+ */
+
+&fastboot {
+    front_awb_0 {
+        enable {
+			      size = [04 00 00 00];
+			      data = [00 00 00 00];
+		        };
+        color_gain {
+			      size = [0c 00 00 00];
+			      data = [00 01 00 00 00 01 00 00 00 01 00 00];
+		        };
+		};
+};

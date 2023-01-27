@@ -1,0 +1,17 @@
+&fastboot {
+	hdal-mem {
+		comn_blk_0 = <0x2102000 0x5200>;
+		comn_blk_1 = <0x2108000 0x5200>;
+		comn_blk_2 = <0x210f000 0x2f7800>;
+		comn_blk_3 = <0x2407000 0x2f7800>;
+		comn_blk_4 = <0x26ff000 0x2f7800>;
+		comn_blk_5 = <0x29f8000 0x70a00>;
+		comn_blk_6 = <0x2a69000 0x70a00>;
+		comn_blk_7 = <0x2ada000 0x70a00>;
+		comn_blk_cnt = <8>;
+		vprc_ctrl_0 = <0x2b4c000 0x8ff40>;
+		venc_max_0 = <0x2bdd000 0x895d84>;
+		acap_ctrl_0 = <0x3474000 0x36580>;
+		venc_max_1 = <0x34ac000 0x835d84>;
+	};
+};

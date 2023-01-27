@@ -1,0 +1,21 @@
+/*
+ * Novatek Ltd. NA51089 BSP part of dts
+ *
+ * Cortex-A9
+ *
+ * !!!!!! WARNING !!!!! 
+ * !!!!!! for emmc, 
+ * !!!!!! 1. rootfs, rootfs1 and rootfs2, mbr1, rootfsl1, mbr2, rootfsl2, ... (rootfsl l=logical partition in fdisk)
+ * !!!!!!    all must be inascending order and continuous in the bottom of emmc. (with naming rule)
+ * !!!!!! 2. rootfs, rootfs1 and rootfs2 must be existing; mbr1, rootfsl1 are optional.
+ */
+
+&emmc {
+	partition_mbr {         label = "mbr";                    reg = <0x0 0x00000000 0x0 0x00000200>; };  /* Fixed */
+	partition_fdt {	        label = "fdt";	                  reg = <0x0 0x00040000 0x0 0x00040000>; };  /* Fixed */
+	partition_fdt.restore {	label = "fdt.restore";            reg = <0x0 0x00080000 0x0 0x00040000>; };  /* Fixed */
+	partition_uboot {       label = "uboot";                  reg = <0x0 0x000C0000 0x0 0x00200000>; };
+	partition_uenv {        label = "uenv";                   reg = <0x0 0x002C0000 0x0 0x00040000>; };
+	partition_kernel {      label = "kernel";                 reg = <0x0 0x00300000 0x0 0x00400000>; };
+	partition_rootfs {      label = "rootfs";  active="true"; reg = <0x0 0x00700000 0x0 0x0A000000>; };  /* root-fs (active="true" is to assign rootfs partition device) */
+};

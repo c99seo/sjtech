@@ -1,0 +1,11 @@
+/*
+ * Novatek Ltd. NA51089 BSP part of dts
+ *
+ * Cortex-A9
+ *
+ */
+#include <dt-bindings/gpio/nvt-gpio.h>
+/ {
+	display { type = "lcd"; lcd_ctrl = <1>; sif_channel = <2>; gpio_cs = <P_GPIO(10)>; gpio_clk = <P_GPIO(11)>; gpio_data = <P_GPIO(12)>; };
+};
+
